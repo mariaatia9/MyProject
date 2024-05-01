@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <form action="#" th:action="@{create}" th:object="${person}" method="post">
+            <label for="fname">Vorname</label>
+            <input type="text" id="fname" th:field="*{fname}" />
+            
+            <label for="lname">Nachname</label>
+            <input type="text" id="lname" th:field="*{lname}" />
+            <button type="submit">Senden</button>
+        </form>
+        
+
+    </body>
+</html>
